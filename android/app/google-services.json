@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336003425843",
+    "project_id": "dummy-trade",
+    "storage_bucket": "dummy-trade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336003425843:android:083fbc8ed8fc2e007c6546",
+        "android_client_info": {
+          "package_name": "com.example.dummy_trade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336003425843-njo7mil26hdgfuq8c27pfs464ia2rsb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhILZhW1aDT9EYDSY36Ewvx7bB-iPeX8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336003425843-njo7mil26hdgfuq8c27pfs464ia2rsb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
