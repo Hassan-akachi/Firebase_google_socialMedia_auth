@@ -3,6 +3,7 @@ import 'package:dummy_trade/provider/auth_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../main.dart';
 
@@ -21,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               navigatorKey.currentState!.popUntil((route) => route.isFirst);
             },
-            child: const Text("sign up",style: TextStyle(fontSize: 20,color: Colors.white)),
+            child: Text(AppLocalizations.of(context)!.signup,style: TextStyle(fontSize: 20,color: Colors.white)),
           )
         ],
       ),
@@ -51,9 +52,9 @@ class HomeScreen extends StatelessWidget {
                   Provider.of<AuthProvider>(context,listen: false).logout();
                   navigatorKey.currentState!.popUntil((route) => route.isFirst);
                 },
-                child: const Text(
-                  "sign out",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                child:  Text(
+                  AppLocalizations.of(context)!.signout ,
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ))
           ],
         ),

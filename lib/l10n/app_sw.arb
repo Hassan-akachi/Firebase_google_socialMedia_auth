@@ -1,0 +1,16 @@
+{
+     "language":"kiswahili",
+      "login": "Ingia",
+      "signup": "kujiandikisha",
+      "password": "nenosiri",
+      "inputyourname": "Ingiza jina lako ",
+      "donthaveanaccount": "huna akaunti",
+      "email": "barua pepe",
+      "username": "jina la mtumiaji",
+      "phonenumber": "nambari ya simu",
+      "confirmyourpassword": "Thibitisha nenosiri lako",
+      "forgotpassword": "Umesahau nywila",
+      "signout": "Kuondoka",
+      "alreadyhaveanaccount": "tayari una akaunti?",
+      "signinwith": "ingia na {username}"
+}

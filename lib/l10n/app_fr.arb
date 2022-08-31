@@ -1,0 +1,17 @@
+{
+     "language":"Français",
+     "login": "le login",
+     "signup": "le registre",
+     "password": "le mot de passe",
+     "inputyourname": "Entrez votre nom ",
+     "donthaveanaccount": "je n ai pas de compte",
+     "email": "Email",
+     "username": "Nom d utilisateur",
+     "phonenumber": "numéro de téléphone",
+     "confirmyourpassword": "Confirmer votre mot de passe",
+     "forgotpassword": "Mot de passe oublié",
+     "signout": "Se déconnecter",
+     "alreadyhaveanaccount": "Vous avez déjà un compte ?",
+     "signinwith": "se connecter avec{username}"
+
+}

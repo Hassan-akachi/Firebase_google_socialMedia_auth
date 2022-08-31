@@ -1,0 +1,16 @@
+{
+     "language":"عربى",
+     "login": "دخول",
+     "signup": "تسجيل",
+     "password": "كلمه السر",
+     "inputyourname": "أدخل اسمك ",
+     "donthaveanaccount": "ليس لديك حساب",
+     "email": "البريد الإلكتروني",
+     "username": "اسم االمستخدم",
+     "phonenumber": "رقم الهاتف",
+     "confirmyourpassword": "أكد رقمك السري",
+     "forgotpassword": "هل نسيت كلمة السر",
+     "signout": "تسجيل خروج",
+     "alreadyhaveanaccount": "هل لديك حساب ؟",
+     "signinwith": "سجل دخولك بواسطة {username}"
+}

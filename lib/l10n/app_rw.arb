@@ -1,0 +1,15 @@
+{
+    "language":"kinyarwanda",
+    "login": "injira",
+    "signup": "kwiyandikisha",
+    "password": "ijambo ryibanga",
+    "inputyourname": "Andika izina ryawe ",
+    "donthaveanaccount": "ntugire konti",
+    "email": "imeri",
+    "username": "izina ukoresha",
+    "phonenumber": "nimero ya terefone",
+    "confirmyourpassword": "Emeza ijambo ryibanga",
+    "forgotpassword": "Wibagiwe ijambo ryibanga",
+    "signout": "gusohoka",
+    "alreadyhaveanaccount": "usanzwe ufite konti?"
+}

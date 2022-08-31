@@ -2,6 +2,7 @@ import 'package:dummy_trade/provider/auth_provider.dart';
 import 'package:dummy_trade/screens/auth_screen/sign_up_screen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +27,7 @@ class WelcomeScreen extends StatelessWidget {
                 SignButton(
                   buttoncolor: Colors.blue,
                   textcolor: Colors.white,
-                  buttonText: "sign up with Email",
+                  buttonText: "${AppLocalizations.of(context)!.signup} ${AppLocalizations.of(context)!.email}",
                   onPressed: () {
                     Navigator.pushNamed(context, SignUpScreen.routeName);
 
@@ -38,12 +39,12 @@ class WelcomeScreen extends StatelessWidget {
           ),
            Padding(
              padding: const EdgeInsets.symmetric(horizontal: 30),
-             child: RichText(text: TextSpan(text: "No Account? ",
+             child: RichText(text: TextSpan(text: AppLocalizations.of(context)!.donthaveanaccount,
                style: const TextStyle(color: Colors.black ,fontSize: 20),
                children: [
                  TextSpan(recognizer: TapGestureRecognizer()
                  ..onTap= onClickedSignUp,
-                 text: "Sign in",
+                 text: AppLocalizations.of(context)!.signup,
                  style:const TextStyle(
                    decoration: TextDecoration.underline,
                    color: Colors.blue

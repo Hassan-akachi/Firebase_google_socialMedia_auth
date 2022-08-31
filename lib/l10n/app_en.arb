@@ -1,0 +1,63 @@
+{
+    "language":"English",
+    "@language":{
+        "description":"The current Language"
+    },
+    "login": "Login",
+    "@login":{
+    "description":"user login"
+    },
+    "signup": "Sign up",
+    "@signup":{
+        "description":"user Sign up"
+        },
+    "password": "Password",
+    "@password":{
+        "description":"user password"
+        },
+    "inputyourname": "Input your name ",
+     "@inputyourname":{
+            "description":"user Input your name "
+            },
+    "donthaveanaccount": "Don.t have an account",
+    "@donthaveanaccount":{
+            "description":"user Don.t have an account"
+            },
+    "email": "Email",
+    "@email":{
+            "description":"user email"
+            },
+    "username": "Username",
+    "@username":{
+            "description":"user username"
+            },
+    "phonenumber": "Phone number",
+    "@phonenumber":{
+            "description":"user phone number"
+            },
+    "confirmyourpassword": "Confirm your password",
+    "@confirmyourpassword":{
+            "description":"user confirm your password "
+            },
+    "forgotpassword": "Forgot Password",
+    "@forgotpassword":{
+            "description":"user Forgot password"
+            },
+    "signout": "sign out",
+    "@signout":{
+            "description":"user sign out"
+            },
+    "alreadyhaveanaccount": "Already have an account?",
+    "@alreadyhaveanaccount":{
+                "description":"user Already have an account?"
+                },
+    "signinwith": "sign in with {username}",
+        "@signinwith":{
+                    "description": "user sign in with",
+                    "placeholders": {
+                        "username": {
+                            "type": "String"
+                        }
+                        }
+                    }
+}

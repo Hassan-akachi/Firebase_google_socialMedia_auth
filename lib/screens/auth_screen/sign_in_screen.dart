@@ -2,11 +2,13 @@ import 'package:dummy_trade/main.dart';
 import 'package:dummy_trade/model/local_auth_api.dart';
 import 'package:dummy_trade/screens/auth_screen/forget_password_screen.dart';
 import 'package:dummy_trade/screens/home_screen.dart';
+import 'package:dummy_trade/widgets/language_picker.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../../model/auth_services.dart';
 import '../../provider/auth_provider.dart';
@@ -41,6 +43,11 @@ class _SignInScreenState extends State<SignInScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
+        appBar: AppBar(
+          title: Text("sign in"),
+          centerTitle: true,
+          actions: [LangugaePicker(),SizedBox(width: 12,)],
+        ),
         body: Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 30,
@@ -53,7 +60,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     EmailEditText(
-                      hint: "type your email",
+                      hint: AppLocalizations.of(context)!.email,
                       inputType: TextInputType.emailAddress,
                       controller: emailcontroller,
                       autofillHints: const [AutofillHints.email],
@@ -61,7 +68,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     const SizedBox(height: 20),
                     PasswordEditText(
                       showText: showText,
-                      hint: "type your password",
+                      hint: AppLocalizations.of(context)!.password,
                       inputType: TextInputType.number,
                       controller: passwordcontroller,
                       autofillHint: const [AutofillHints.password],
@@ -77,7 +84,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           child: SignButton(
                               buttoncolor: Colors.blue,
                               textcolor: Colors.white,
-                              buttonText: "sign in",
+                              buttonText: AppLocalizations.of(context)!.login,
                               onPressed: () async {
                                 AuthService().signin(
                                     emailcontroller.text.trim(),
@@ -106,9 +113,9 @@ class _SignInScreenState extends State<SignInScreen> {
                     Padding(
                       padding: const EdgeInsets.only(left: 30, bottom: 20),
                       child: GestureDetector(
-                        child: const Text(
-                          "Forget Password",
-                          style: TextStyle(
+                        child:  Text(
+                          AppLocalizations.of(context)!.forgotpassword,
+                          style: const TextStyle(
                               fontSize: 20,
                               color: Colors.blue,
                               decoration: TextDecoration.underline),
@@ -131,7 +138,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           TextSpan(
                               recognizer: TapGestureRecognizer()
                                 ..onTap = widget.onClickedSignUp,
-                              text: "Sign Up",
+                              text: AppLocalizations.of(context)!.signup,
                               style: const TextStyle(
                                   decoration: TextDecoration.underline,
                                   color: Colors.blue))
@@ -142,7 +149,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     SignButton(
                       buttoncolor: Colors.white,
                       textcolor: Colors.blue,
-                      buttonText: "Sign In with Google",
+                      buttonText: "${AppLocalizations.of(context)!.signup} Google",
                       onPressed: () {
                         Provider.of<AuthProvider>(context,listen: false).googleLogIn();
                       },

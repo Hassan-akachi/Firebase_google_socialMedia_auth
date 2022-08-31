@@ -42,6 +42,7 @@ Future logout()async{
   FirebaseAuth.instance.signOut();
   navigatorKey.currentState!.popAndPushNamed(AuthCheck.routeName);
 }
+
 //register with phone
  final _auth= FirebaseAuth.instance;
  String? verificationCode;
