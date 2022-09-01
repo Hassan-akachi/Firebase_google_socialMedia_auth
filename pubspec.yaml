@@ -30,6 +30,8 @@ dependencies:
   modal_progress_hud:
   splashscreen: ^1.3.5
 
+  #local storage
+  shared_preferences:
     #pin Input Field
   pinput: ^2.2.9
     #intl phone field
